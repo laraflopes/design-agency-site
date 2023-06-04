@@ -1,0 +1,84 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: lavender;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+.main {
+  flex: 1;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+footer {
+  text-align: right;
+  color: midnightblue;
+}
+
+/* both images */
+.tile-image{
+  height: 200px;
+  float: left;
+  /* margin has to be right not just margin like i had */
+  margin-right: 50px;
+}
+
+/* each div takes up 45% of width */
+.card{
+  width: 45%;
+}
+
+/* left div */
+.left{
+  float: left;
+}
+
+/* right div */
+.right{
+  float: right;
+}
+
+.creative {
+  color: purple;
+}
+
+@media (max-width: 680px){
+
+  .logo{
+    width: 100px;
+  }
+
+  h1{
+    font-size: 3.5 rem;
+    /* when mobile text is at center */
+    text-align: center;
+  }
+
+/* both cards width is 100% of page and block so goes on the bottom of the other */
+  .card{
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    /* The inline contents are justified. 
+    Text should be spaced to line up its left and right edges 
+    to the left and right edges of the line box, 
+    except for the last line. */
+    text-align: justify;
+  }
+
+  .card img{
+    margin-bottom: 10px;
+    width: 100%;
+    display: inline;
+    object-fit: cover;
+  }
+
+}
+
+
+
+
